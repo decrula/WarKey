@@ -8,6 +8,6 @@ namespace WarKey
     public interface IWarKeyControl
     {
         void Save(string name, IWarKeyModel model);
-        void Load(string name);
+        IWarKeyModel Load(string name);
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace WarKey
 {
+    [Serializable]
     public class WarKeyModel : IWarKeyModel
     {
         private string name;

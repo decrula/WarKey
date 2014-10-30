@@ -10,12 +10,14 @@ namespace WarKey
     {
         private IWarKeyModel model;
         private IWarKeyView view;
+        private IWarKeyModelRepository repository;
         private Keyboard keyboard;
 
         public WarKeyController(IWarKeyView view)
         {
             this.view = view;
             this.model = view.GetCurrent();
+            this.repository = new WarKeyModelRepository();
 
             keyboard = new Keyboard(this);
         }
@@ -23,12 +25,13 @@ namespace WarKey
         public void Save(string name, IWarKeyModel model)
         {
             this.model = model;
-
+            repository.Update(name, model);
         }
 
-        public void Load(string name)
+        public IWarKeyModel Load(string name)
         {
-            //throw new NotImplementedException();
+            IWarKeyModel model = repository.Read(name);
+            return model;
         }
 
         public bool Handle(KeyEventArgs e)

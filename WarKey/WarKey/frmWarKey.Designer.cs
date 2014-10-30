@@ -40,12 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNumPad7 = new WarKey.KeyTextBox();
-            this.txtNumPad8 = new WarKey.KeyTextBox();
-            this.txtNumPad2 = new WarKey.KeyTextBox();
-            this.txtNumPad4 = new WarKey.KeyTextBox();
-            this.txtNumPad1 = new WarKey.KeyTextBox();
-            this.txtNumPad5 = new WarKey.KeyTextBox();
             this.optSolution = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,28 +47,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grpMainpad = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtMapped5 = new WarKey.KeyTextBox();
-            this.txtOriginal5 = new WarKey.KeyTextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtMapped4 = new WarKey.KeyTextBox();
-            this.txtOriginal4 = new WarKey.KeyTextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtMapped3 = new WarKey.KeyTextBox();
-            this.txtOriginal3 = new WarKey.KeyTextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtMapped2 = new WarKey.KeyTextBox();
-            this.txtOriginal2 = new WarKey.KeyTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtMapped1 = new WarKey.KeyTextBox();
-            this.txtOriginal1 = new WarKey.KeyTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtMapped0 = new WarKey.KeyTextBox();
-            this.txtOriginal0 = new WarKey.KeyTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -82,6 +64,24 @@
             this.cmMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.显示ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtMapped5 = new WarKey.KeyTextBox();
+            this.txtOriginal5 = new WarKey.KeyTextBox();
+            this.txtMapped4 = new WarKey.KeyTextBox();
+            this.txtOriginal4 = new WarKey.KeyTextBox();
+            this.txtMapped3 = new WarKey.KeyTextBox();
+            this.txtOriginal3 = new WarKey.KeyTextBox();
+            this.txtMapped2 = new WarKey.KeyTextBox();
+            this.txtOriginal2 = new WarKey.KeyTextBox();
+            this.txtMapped1 = new WarKey.KeyTextBox();
+            this.txtOriginal1 = new WarKey.KeyTextBox();
+            this.txtMapped0 = new WarKey.KeyTextBox();
+            this.txtOriginal0 = new WarKey.KeyTextBox();
+            this.txtNumPad7 = new WarKey.KeyTextBox();
+            this.txtNumPad8 = new WarKey.KeyTextBox();
+            this.txtNumPad2 = new WarKey.KeyTextBox();
+            this.txtNumPad4 = new WarKey.KeyTextBox();
+            this.txtNumPad1 = new WarKey.KeyTextBox();
+            this.txtNumPad5 = new WarKey.KeyTextBox();
             this.groupBox2.SuspendLayout();
             this.grpNumpad.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -205,67 +205,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "小键盘7:";
             // 
-            // txtNumPad7
-            // 
-            this.txtNumPad7.AcceptsTab = true;
-            this.txtNumPad7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad7.Location = new System.Drawing.Point(65, 18);
-            this.txtNumPad7.Name = "txtNumPad7";
-            this.txtNumPad7.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad7.TabIndex = 0;
-            this.txtNumPad7.Text = "空";
-            this.txtNumPad7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtNumPad8
-            // 
-            this.txtNumPad8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad8.Location = new System.Drawing.Point(155, 18);
-            this.txtNumPad8.Name = "txtNumPad8";
-            this.txtNumPad8.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad8.TabIndex = 1;
-            this.txtNumPad8.Text = "3";
-            this.txtNumPad8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtNumPad2
-            // 
-            this.txtNumPad2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad2.Location = new System.Drawing.Point(155, 72);
-            this.txtNumPad2.Name = "txtNumPad2";
-            this.txtNumPad2.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad2.TabIndex = 5;
-            this.txtNumPad2.Text = "锁";
-            this.txtNumPad2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtNumPad4
-            // 
-            this.txtNumPad4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad4.Location = new System.Drawing.Point(65, 45);
-            this.txtNumPad4.Name = "txtNumPad4";
-            this.txtNumPad4.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad4.TabIndex = 2;
-            this.txtNumPad4.Text = "4";
-            this.txtNumPad4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtNumPad1
-            // 
-            this.txtNumPad1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad1.Location = new System.Drawing.Point(65, 72);
-            this.txtNumPad1.Name = "txtNumPad1";
-            this.txtNumPad1.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad1.TabIndex = 4;
-            this.txtNumPad1.Text = "换";
-            this.txtNumPad1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtNumPad5
-            // 
-            this.txtNumPad5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtNumPad5.Location = new System.Drawing.Point(155, 45);
-            this.txtNumPad5.Name = "txtNumPad5";
-            this.txtNumPad5.Size = new System.Drawing.Size(25, 21);
-            this.txtNumPad5.TabIndex = 3;
-            this.txtNumPad5.Text = "5";
-            this.txtNumPad5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // optSolution
             // 
             this.optSolution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -276,6 +215,7 @@
             this.optSolution.Name = "optSolution";
             this.optSolution.Size = new System.Drawing.Size(135, 20);
             this.optSolution.TabIndex = 13;
+            this.optSolution.SelectedIndexChanged += new System.EventHandler(this.optSolution_SelectedIndexChanged);
             // 
             // btnSave
             // 
@@ -360,26 +300,6 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "默认:";
             // 
-            // txtMapped5
-            // 
-            this.txtMapped5.AcceptsTab = true;
-            this.txtMapped5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped5.Location = new System.Drawing.Point(229, 72);
-            this.txtMapped5.Name = "txtMapped5";
-            this.txtMapped5.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped5.TabIndex = 33;
-            this.txtMapped5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal5
-            // 
-            this.txtOriginal5.AcceptsTab = true;
-            this.txtOriginal5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal5.Location = new System.Drawing.Point(174, 72);
-            this.txtOriginal5.Name = "txtOriginal5";
-            this.txtOriginal5.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal5.TabIndex = 32;
-            this.txtOriginal5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WarKey.Properties.Resources.arrow_right;
@@ -397,26 +317,6 @@
             this.label11.Size = new System.Drawing.Size(35, 12);
             this.label11.TabIndex = 27;
             this.label11.Text = "默认:";
-            // 
-            // txtMapped4
-            // 
-            this.txtMapped4.AcceptsTab = true;
-            this.txtMapped4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped4.Location = new System.Drawing.Point(102, 72);
-            this.txtMapped4.Name = "txtMapped4";
-            this.txtMapped4.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped4.TabIndex = 29;
-            this.txtMapped4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal4
-            // 
-            this.txtOriginal4.AcceptsTab = true;
-            this.txtOriginal4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal4.Location = new System.Drawing.Point(47, 72);
-            this.txtOriginal4.Name = "txtOriginal4";
-            this.txtOriginal4.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal4.TabIndex = 28;
-            this.txtOriginal4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox5
             // 
@@ -436,26 +336,6 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "默认:";
             // 
-            // txtMapped3
-            // 
-            this.txtMapped3.AcceptsTab = true;
-            this.txtMapped3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped3.Location = new System.Drawing.Point(229, 45);
-            this.txtMapped3.Name = "txtMapped3";
-            this.txtMapped3.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped3.TabIndex = 25;
-            this.txtMapped3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal3
-            // 
-            this.txtOriginal3.AcceptsTab = true;
-            this.txtOriginal3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal3.Location = new System.Drawing.Point(174, 45);
-            this.txtOriginal3.Name = "txtOriginal3";
-            this.txtOriginal3.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal3.TabIndex = 24;
-            this.txtOriginal3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WarKey.Properties.Resources.arrow_right;
@@ -473,26 +353,6 @@
             this.label9.Size = new System.Drawing.Size(35, 12);
             this.label9.TabIndex = 19;
             this.label9.Text = "默认:";
-            // 
-            // txtMapped2
-            // 
-            this.txtMapped2.AcceptsTab = true;
-            this.txtMapped2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped2.Location = new System.Drawing.Point(102, 45);
-            this.txtMapped2.Name = "txtMapped2";
-            this.txtMapped2.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped2.TabIndex = 21;
-            this.txtMapped2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal2
-            // 
-            this.txtOriginal2.AcceptsTab = true;
-            this.txtOriginal2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal2.Location = new System.Drawing.Point(47, 45);
-            this.txtOriginal2.Name = "txtOriginal2";
-            this.txtOriginal2.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal2.TabIndex = 20;
-            this.txtOriginal2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
@@ -512,26 +372,6 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "默认:";
             // 
-            // txtMapped1
-            // 
-            this.txtMapped1.AcceptsTab = true;
-            this.txtMapped1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped1.Location = new System.Drawing.Point(229, 18);
-            this.txtMapped1.Name = "txtMapped1";
-            this.txtMapped1.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped1.TabIndex = 17;
-            this.txtMapped1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal1
-            // 
-            this.txtOriginal1.AcceptsTab = true;
-            this.txtOriginal1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal1.Location = new System.Drawing.Point(174, 18);
-            this.txtOriginal1.Name = "txtOriginal1";
-            this.txtOriginal1.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal1.TabIndex = 16;
-            this.txtOriginal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WarKey.Properties.Resources.arrow_right;
@@ -549,26 +389,6 @@
             this.label7.Size = new System.Drawing.Size(35, 12);
             this.label7.TabIndex = 12;
             this.label7.Text = "默认:";
-            // 
-            // txtMapped0
-            // 
-            this.txtMapped0.AcceptsTab = true;
-            this.txtMapped0.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMapped0.Location = new System.Drawing.Point(102, 18);
-            this.txtMapped0.Name = "txtMapped0";
-            this.txtMapped0.Size = new System.Drawing.Size(25, 21);
-            this.txtMapped0.TabIndex = 13;
-            this.txtMapped0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOriginal0
-            // 
-            this.txtOriginal0.AcceptsTab = true;
-            this.txtOriginal0.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtOriginal0.Location = new System.Drawing.Point(47, 18);
-            this.txtOriginal0.Name = "txtOriginal0";
-            this.txtOriginal0.Size = new System.Drawing.Size(25, 21);
-            this.txtOriginal0.TabIndex = 12;
-            this.txtOriginal0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -627,6 +447,199 @@
             this.退出ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
+            // txtMapped5
+            // 
+            this.txtMapped5.AcceptsTab = true;
+            this.txtMapped5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped5.KeyValue = 0;
+            this.txtMapped5.Location = new System.Drawing.Point(229, 72);
+            this.txtMapped5.Name = "txtMapped5";
+            this.txtMapped5.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped5.TabIndex = 33;
+            this.txtMapped5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal5
+            // 
+            this.txtOriginal5.AcceptsTab = true;
+            this.txtOriginal5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal5.KeyValue = 0;
+            this.txtOriginal5.Location = new System.Drawing.Point(174, 72);
+            this.txtOriginal5.Name = "txtOriginal5";
+            this.txtOriginal5.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal5.TabIndex = 32;
+            this.txtOriginal5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtMapped4
+            // 
+            this.txtMapped4.AcceptsTab = true;
+            this.txtMapped4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped4.KeyValue = 0;
+            this.txtMapped4.Location = new System.Drawing.Point(102, 72);
+            this.txtMapped4.Name = "txtMapped4";
+            this.txtMapped4.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped4.TabIndex = 29;
+            this.txtMapped4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal4
+            // 
+            this.txtOriginal4.AcceptsTab = true;
+            this.txtOriginal4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal4.KeyValue = 0;
+            this.txtOriginal4.Location = new System.Drawing.Point(47, 72);
+            this.txtOriginal4.Name = "txtOriginal4";
+            this.txtOriginal4.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal4.TabIndex = 28;
+            this.txtOriginal4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtMapped3
+            // 
+            this.txtMapped3.AcceptsTab = true;
+            this.txtMapped3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped3.KeyValue = 0;
+            this.txtMapped3.Location = new System.Drawing.Point(229, 45);
+            this.txtMapped3.Name = "txtMapped3";
+            this.txtMapped3.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped3.TabIndex = 25;
+            this.txtMapped3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal3
+            // 
+            this.txtOriginal3.AcceptsTab = true;
+            this.txtOriginal3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal3.KeyValue = 0;
+            this.txtOriginal3.Location = new System.Drawing.Point(174, 45);
+            this.txtOriginal3.Name = "txtOriginal3";
+            this.txtOriginal3.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal3.TabIndex = 24;
+            this.txtOriginal3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtMapped2
+            // 
+            this.txtMapped2.AcceptsTab = true;
+            this.txtMapped2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped2.KeyValue = 0;
+            this.txtMapped2.Location = new System.Drawing.Point(102, 45);
+            this.txtMapped2.Name = "txtMapped2";
+            this.txtMapped2.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped2.TabIndex = 21;
+            this.txtMapped2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal2
+            // 
+            this.txtOriginal2.AcceptsTab = true;
+            this.txtOriginal2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal2.KeyValue = 0;
+            this.txtOriginal2.Location = new System.Drawing.Point(47, 45);
+            this.txtOriginal2.Name = "txtOriginal2";
+            this.txtOriginal2.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal2.TabIndex = 20;
+            this.txtOriginal2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtMapped1
+            // 
+            this.txtMapped1.AcceptsTab = true;
+            this.txtMapped1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped1.KeyValue = 0;
+            this.txtMapped1.Location = new System.Drawing.Point(229, 18);
+            this.txtMapped1.Name = "txtMapped1";
+            this.txtMapped1.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped1.TabIndex = 17;
+            this.txtMapped1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal1
+            // 
+            this.txtOriginal1.AcceptsTab = true;
+            this.txtOriginal1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal1.KeyValue = 0;
+            this.txtOriginal1.Location = new System.Drawing.Point(174, 18);
+            this.txtOriginal1.Name = "txtOriginal1";
+            this.txtOriginal1.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal1.TabIndex = 16;
+            this.txtOriginal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtMapped0
+            // 
+            this.txtMapped0.AcceptsTab = true;
+            this.txtMapped0.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMapped0.KeyValue = 0;
+            this.txtMapped0.Location = new System.Drawing.Point(102, 18);
+            this.txtMapped0.Name = "txtMapped0";
+            this.txtMapped0.Size = new System.Drawing.Size(25, 21);
+            this.txtMapped0.TabIndex = 13;
+            this.txtMapped0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtOriginal0
+            // 
+            this.txtOriginal0.AcceptsTab = true;
+            this.txtOriginal0.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtOriginal0.KeyValue = 0;
+            this.txtOriginal0.Location = new System.Drawing.Point(47, 18);
+            this.txtOriginal0.Name = "txtOriginal0";
+            this.txtOriginal0.Size = new System.Drawing.Size(25, 21);
+            this.txtOriginal0.TabIndex = 12;
+            this.txtOriginal0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad7
+            // 
+            this.txtNumPad7.AcceptsTab = true;
+            this.txtNumPad7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad7.KeyValue = 0;
+            this.txtNumPad7.Location = new System.Drawing.Point(65, 18);
+            this.txtNumPad7.Name = "txtNumPad7";
+            this.txtNumPad7.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad7.TabIndex = 0;
+            this.txtNumPad7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad8
+            // 
+            this.txtNumPad8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad8.KeyValue = 0;
+            this.txtNumPad8.Location = new System.Drawing.Point(155, 18);
+            this.txtNumPad8.Name = "txtNumPad8";
+            this.txtNumPad8.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad8.TabIndex = 1;
+            this.txtNumPad8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad2
+            // 
+            this.txtNumPad2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad2.KeyValue = 0;
+            this.txtNumPad2.Location = new System.Drawing.Point(155, 72);
+            this.txtNumPad2.Name = "txtNumPad2";
+            this.txtNumPad2.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad2.TabIndex = 5;
+            this.txtNumPad2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad4
+            // 
+            this.txtNumPad4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad4.KeyValue = 0;
+            this.txtNumPad4.Location = new System.Drawing.Point(65, 45);
+            this.txtNumPad4.Name = "txtNumPad4";
+            this.txtNumPad4.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad4.TabIndex = 2;
+            this.txtNumPad4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad1
+            // 
+            this.txtNumPad1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad1.KeyValue = 0;
+            this.txtNumPad1.Location = new System.Drawing.Point(65, 72);
+            this.txtNumPad1.Name = "txtNumPad1";
+            this.txtNumPad1.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad1.TabIndex = 4;
+            this.txtNumPad1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtNumPad5
+            // 
+            this.txtNumPad5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtNumPad5.KeyValue = 0;
+            this.txtNumPad5.Location = new System.Drawing.Point(155, 45);
+            this.txtNumPad5.Name = "txtNumPad5";
+            this.txtNumPad5.Size = new System.Drawing.Size(25, 21);
+            this.txtNumPad5.TabIndex = 3;
+            this.txtNumPad5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmWarKey
             // 

@@ -11,6 +11,8 @@ namespace WarKey
 {
     public partial class frmWarKey : Form, IWarKeyView
     {
+        private static readonly string[] NUMPAD = { "D7", "D8", "D4", "D5", "D1", "D2" };
+
         private IWarKeyControl controller;
         private readonly IList<KeyTextBox> numpadTextBoxs = new List<KeyTextBox>();
         /// <summary>
@@ -29,9 +31,9 @@ namespace WarKey
 
         private void InitializeWarKey()
         {
+            controller = new WarKeyController(this);
             // 启动默认方案
             optSolution.SelectedIndex = optSolution.Items.IndexOf("默认方案");
-            controller = new WarKeyController(this);
         }
 
         /// <summary>
@@ -125,7 +127,7 @@ namespace WarKey
             {
                 e.Cancel = true;
                 this.Hide();
-            }      
+            }
         }
 
         private void niNotify_MouseClick(object sender, MouseEventArgs e)
@@ -151,8 +153,60 @@ namespace WarKey
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            this.controller.Save(optSolution.SelectedText, this.GetCurrent());
+            this.controller.Save(optSolution.Text, this.GetCurrent());
             MessageBox.Show("success.");
+        }
+
+        private void optSolution_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string solutionName = optSolution.Text;
+            IWarKeyModel model = this.controller.Load(solutionName);
+            this.UpdateUI(model);
+        }
+
+        private void UpdateUI(IWarKeyModel model)
+        {
+            this.cbDisplayEnemysHP.Checked = model.DisplayEnemysHP;
+            this.cbDisplayAlliesHP.Checked = model.DisplayAlliesHP;
+
+            foreach (KeyValuePair<int, int> pair in model.KeyMappers)
+            {
+                this.UpdateTextBox(pair);
+            }
+        }
+
+        private void UpdateTextBox(KeyValuePair<int, int> pair)
+        {
+            string originalKeyDescription = KeyboardDescription.GetDescription(pair.Value);
+            if (NUMPAD.Contains(originalKeyDescription))
+            {
+                string textboxID = originalKeyDescription.Replace("D", "txtNumPad");
+                (this.grpNumpad.Controls[textboxID] as KeyTextBox).KeyValue = pair.Key;
+            }
+            else
+            {
+                KeyValuePair<KeyTextBox, KeyTextBox> textboxPair = GetAvailableKeyTextBoxPair();
+                textboxPair.Key.Text = KeyboardDescription.GetDescription(pair.Key);
+                textboxPair.Value.Text = originalKeyDescription;
+            }
+        }
+
+        private KeyValuePair<KeyTextBox, KeyTextBox> GetAvailableKeyTextBoxPair()
+        {
+            KeyValuePair<KeyTextBox, KeyTextBox> textboxPair;
+
+            for (int i = 0; i < 6; i++)
+            {
+                KeyTextBox txtOriginal = this.grpMainpad.Controls["txtOriginal" + i] as KeyTextBox;
+
+                if (string.IsNullOrWhiteSpace(txtOriginal.Text) == false && txtOriginal.Text != "\0")
+                    continue;
+
+                KeyTextBox txtMapped = this.grpMainpad.Controls[txtOriginal.Name.Replace("txtOriginal", "txtMapped")] as KeyTextBox;
+                textboxPair = new KeyValuePair<KeyTextBox, KeyTextBox>(txtMapped, txtOriginal);
+                return textboxPair;
+            }
+            return new KeyValuePair<KeyTextBox, KeyTextBox>();
         }
     }
 }

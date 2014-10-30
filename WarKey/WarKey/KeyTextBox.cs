@@ -20,6 +20,10 @@ namespace WarKey
             {
                 return KeyboardDescription.GetKey(this.Text);
             }
+            set
+            {
+                this.Text = KeyboardDescription.GetDescription(value);
+            }
         }
 
         protected override bool IsInputKey(Keys keyData)
