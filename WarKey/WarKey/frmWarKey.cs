@@ -160,7 +160,16 @@ namespace WarKey
         private void optSolution_SelectedIndexChanged(object sender, EventArgs e)
         {
             string solutionName = optSolution.Text;
-            IWarKeyModel model = this.controller.Load(solutionName);
+            IWarKeyModel model;
+            try
+            {
+                model = this.controller.Load(solutionName);
+            }
+            catch
+            {
+                model = new WarKeyModel("默认方案", true, true, new Dictionary<int, int>());
+            }
+
             this.UpdateUI(model);
         }
 
